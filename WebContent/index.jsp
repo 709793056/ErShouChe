@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="renderer" content="webkit">
-    <title>后台管理中心</title>  
+    <title>二手车后台管理中心</title>  
     <link rel="stylesheet" href="css/pintuer.css">
     <link rel="stylesheet" href="css/admin.css">
     <script src="js/jquery.js"></script>   
@@ -17,24 +17,35 @@
   </div>
   <div class="head-l"><a class="button button-little bg-green" href="" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp;<a href="##" class="button button-little bg-blue"><span class="icon-wrench"></span> 清除缓存</a> &nbsp;&nbsp;<a class="button button-little bg-red" href="login.html"><span class="icon-power-off"></span> 退出登录</a> </div>
 </div>
+
 <div class="leftnav">
   <div class="leftnav-title"><strong><span class="icon-list"></span>菜单列表</strong></div>
-  <h2><span class="icon-user"></span>基本设置</h2>
+  
+  <h2><span class="icon-pencil-square-o"></span>二手车管理</h2>
   <ul style="display:block">
-    <li><a href="info.html" target="right"><span class="icon-caret-right"></span>网站设置</a></li>
-    <li><a href="pass.html" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
-    <li><a href="page.html" target="right"><span class="icon-caret-right"></span>单页管理</a></li>  
-    <li><a href="adv.html" target="right"><span class="icon-caret-right"></span>首页轮播</a></li>   
-    <li><a href="book.html" target="right"><span class="icon-caret-right"></span>留言管理</a></li>     
-    <li><a href="column.html" target="right"><span class="icon-caret-right"></span>栏目管理</a></li>
+    <li><a href="info.html" target="right"><span class="icon-caret-right"></span>二手车列表</a></li>
+    <li><a href="pass.html" target="right"><span class="icon-caret-right"></span>添加二手车</a></li>
+    <li><a href="page.html" target="right"><span class="icon-caret-right"></span>修改二手车</a></li>  
+    <li><a href="adv.html" target="right"><span class="icon-caret-right"></span>删除二手车</a></li>   
   </ul>   
-  <h2><span class="icon-pencil-square-o"></span>栏目管理</h2>
+  
+  <h2><span class="icon-user"></span>用户管理</h2>
   <ul>
-    <li><a href="list.html" target="right"><span class="icon-caret-right"></span>内容管理</a></li>
-    <li><a href="add.html" target="right"><span class="icon-caret-right"></span>添加内容</a></li>
-    <li><a href="cate.html" target="right"><span class="icon-caret-right"></span>分类管理</a></li>        
+    <li><a href="list.html" target="right"><span class="icon-caret-right"></span>用户列表</a></li>
+    <li><a href="add.html" target="right"><span class="icon-caret-right"></span>添加用户</a></li>
+    <li><a href="cate.html" target="right"><span class="icon-caret-right"></span>修改用户</a></li>
+    <li><a href="cate.html" target="right"><span class="icon-caret-right"></span>删除用户</a></li>       
+  </ul>  
+  
+   <h2><span class="icon-pencil-square-o"></span>新闻管理</h2>
+  <ul>
+    <li><a href="list.html" target="right"><span class="icon-caret-right"></span>新闻列表</a></li>
+    <li><a href="add.html" target="right"><span class="icon-caret-right"></span>添加新闻</a></li>
+    <li><a href="cate.html" target="right"><span class="icon-caret-right"></span>修改新闻</a></li>
+    <li><a href="cate.html" target="right"><span class="icon-caret-right"></span>删除新闻</a></li>       
   </ul>  
 </div>
+
 <script type="text/javascript">
 $(function(){
   $(".leftnav h2").click(function(){
