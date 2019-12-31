@@ -3,7 +3,6 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-<title>二手车后台管理系统-修改二手车</title>
 <meta name="author" content="DeathGhost" />
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -36,41 +35,9 @@
 <body>
 <!--header-->
 <header>
- <h1 style="color:white;font-weight: bold;font-size: 0.8cm;text-shadow: 2px 2px 2px red;margin-top: 8px">二手车后台管理系统</h1>
- <ul class="rt_nav" style="position: relative;top: -5px">
-  <li><a href="login.html" class="quit_icon">安全退出</a></li>
- </ul>
 </header>
 <!--aside nav-->
 <!--aside nav-->
-<aside class="lt_aside_nav content mCustomScrollbar">
- <h2><a href=".">起始页</a></h2>
- <ul>
-  <li>
-   <dl>
-    <dt>二手车管理</dt>
-    <!--当前链接则添加class:active-->
-    <dd><a href="CarServlet?method=listAll" class="active">二手车列表</a></dd>
-    <dd><a href="carAdd.jsp">添加二手车</a></dd>
-   </dl>
-  </li>
-  <li>
-   <dl>
-    <dt>用户管理</dt>
-    <dd><a href="order_list.html">所有用户列表</a></dd>
-    <dd><a href="order_detail.html">添加用户</a></dd>
-   </dl>
-  </li>
-  <li>
-   <dl>
-    <dt>新闻管理</dt>
-    <dd><a href="user_list.html">所有新闻列表</a></dd>
-    <dd><a href="user_detail.html">添加新闻</a></dd>
-   </dl>
-  </li>
- </ul>
-</aside>
-
 <section class="rt_wrap content mCustomScrollbar">
  <div class="rt_content">
       <div class="page_title">

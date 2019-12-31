@@ -1,10 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8"/>
-<title>二手车后台管理系统-添加二手车</title>
-<meta name="author" content="DeathGhost" />
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" >
 <script src="js/jquery.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
@@ -30,22 +27,35 @@
 		});
 	})(jQuery);
 </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="renderer" content="webkit">
+<title></title>
+<link rel="stylesheet" href="css/pintuer.css">
+<link rel="stylesheet" href="css/admin.css">
+<script src="js/jquery.js"></script>
+<script src="js/pintuer.js"></script>
 </head>
 <body>
 <!--header-->
-<header>
- <h1 style="color:pink;font-weight: bold;font-size: 0.8cm;text-shadow: 2px 2px 2px red;margin-top: 8px">二手车后台管理系统</h1>
-</header>
 
+<body>
+<script type="text/javascript">
+function del(id,mid){
+	if(confirm("您确定要删除吗?")){
+	
+	}
+}
+</script>
 
-
- <div class="rt_content">
+<div class="rt_content">
       <div class="page_title">
-       <h2 class="fl">二手车添加</h2>
-       <a class="fr top_rt_btn">返回产品列表</a>
+       <h3 class="fl" style="color:lightblue;">二手车添加</h3>
+       <a class="fr top_rt_btn">返回列表</a>
       </div>
-     <section>
-     <form method="post"  action="CarServlet?method=add"  enctype="multipart/form-data">
+      
+      <form method="post"  action="CarServlet?method=add"  enctype="multipart/form-data">
       <ul class="ulColumn2">
        <li>
         <span class="item_name" style="width:120px;">图片：</span>
@@ -54,34 +64,47 @@
          <span>上傳图片</span>
         </label>
        </li>
+ 
        <li>
-        <span class="item_name" style="width:120px;">品牌：</span>
-        <input type="text"  name="pinpaiming"  class="textbox textbox_295" placeholder="品牌名"/>
-       </li>
+      
+        <span class="item_name" style="width:120px;"><h3>品牌：</span>
+   
+        <input type="text"  name="pinpaiming" class="input w50" placeholder="品牌名"/>
+
+       </li><br><br>
+        
        <li>
-        <span class="item_name" style="width:120px;">系列：</span>
-        <input type="text" name="xilie" class="textbox textbox_295" placeholder="系列"/>
-       </li>
+        <span class="item_name" style="width:120px;"><h3>系列：</span>
+ 
+        <input type="text" name="xilie" class="input w50" placeholder="系列"/>
+       </li><br><br>
+     
        <li>
-        <span class="item_name" style="width:120px;">公里：</span>
-        <input type="text"  name="gonglishu" class="textbox textbox_295" placeholder="公里数"/>
-       </li>
-       <li>
-        <span class="item_name" style="width:120px;">售价：</span>
-        <input type="text"  name="shoujia" class="textbox textbox_295" placeholder="售价"/>
-       </li>
-       <li>
-        <span class="item_name" style="width:120px;">颜色：</span>
-        <input type="text" name="yanse" class="textbox textbox_295" placeholder="颜色"/>
-       </li>
-       <li>
-        <span class="item_name" style="width:120px;">排量：</span>
-        <input type="text"  name="pailiang" class="textbox textbox_295" placeholder="排量"/>
-       </li>
+        <span class="item_name" style="width:120px;"><h3>公里：</span>
+ 
+        <input type="text"  name="gonglishu" class="input w50" placeholder="公里数"/>
+       </li><br><br>
       
        <li>
+        <span class="item_name" style="width:120px;"><h3>售价：</span>
+   
+        <input type="text"  name="shoujia" class="input w50" placeholder="售价"/>
+       </li><br><br>
+       
+       <li>
+        <span class="item_name" style="width:120px;"><h3>颜色：</span>
+     
+        <input type="text" name="yanse" class="input w50" placeholder="颜色"/>
+       </li><br><br>
+   
+       <li>
+        <span class="item_name" style="width:120px;"><h3>排量：</span>
+        <input type="text"  name="pailiang" class="input w50" placeholder="排量"/>
+       </li><br><br>
+    
+       <li>
         <span class="item_name" style="width:120px;"></span>
-        <input type="submit" class="link_btn"/>
+        <input type="submit" class="button bg-main icon-check-square-o"/>
        </li>
       </ul>
       </form>

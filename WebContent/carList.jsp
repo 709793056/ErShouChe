@@ -7,9 +7,6 @@
 <title>二手车后台管理系统-所有二手列表</title>
 <meta name="author" content="DeathGhost" />
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<!--[if lt IE 9]>
-<script src="js/html5.js"></script>
-<![endif]-->
 <script src="js/jquery.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script>
@@ -36,33 +33,21 @@
 	})(jQuery);
 </script>
 </head>
-
-
 <body>
-<header>
- <h1 style="color:pink;font-weight: bold;font-size: 0.8cm;text-shadow: 2px 2px 2px red;margin-top: 8px">二手车后台管理系统</h1>
-
-</header>
-<!--aside nav-->
-<!--aside nav-->
-
-
-<section class="rt_wrap content mCustomScrollbar">
- <div class="rt_content">
-      <div class="page_title">
-       <h2 class="fl">商品列表示例</h2>
-       <a href="product_detail.html" class="fr top_rt_btn add_icon">添加商品</a>
-      </div>
-      <section class="mtb">
-       <select class="select">
-        <option>下拉菜单</option>
-        <option>菜单1</option>
-       </select>
-       <input type="text" class="textbox textbox_225" placeholder="输入产品关键词或产品货号..."/>
-       <input type="button" value="查询" class="group_btn"/>
-      </section>
-      <table class="table">
-       <tr bgcolor="#19a97b">
+<form method="post" action="" id="listform">
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 内容列表</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
+    <div class="padding border-bottom">
+      <ul class="search" style="padding-left:10px;">
+        <li> <a class="button border-main icon-plus-square-o" href="add.html"> 添加内容</a> </li>
+        <li>首页
+        <li>
+          <input type="text" placeholder="请输入搜索关键字" name="keywords" class="input" style="width:250px; line-height:17px;display:inline-block" />
+          <a href="javascript:void(0)" class="button border-main icon-search" onclick="changesearch()" > 搜索</a></li>
+      </ul>
+    </div>
+   <table class="table">
+       <tr bgcolor=lightblue>
         <th>图片</th>
         <th>品牌</th>
         <th>系列</th>
@@ -100,8 +85,22 @@
        <a>1004</a>
        <a>最后一页</a>
       </aside>
- </div>
-</section>
-
+  </div>
+</form>
+<%  if(request.getAttribute("deleteResult")!=null){
+	if(request.getAttribute("deleteResult").toString().equals("true")){
+		%>
+		<script type="text/javascript">
+		alert("删除成功!");
+		</script>
+		<%
+	}else{
+		%>
+		<script type="text/javascript">
+		alert("删除失败!");
+		</script>
+		<%
+	}
+} %>
 </body>
 </html>

@@ -24,22 +24,19 @@
   <h2><span class="icon-pencil-square-o"></span>二手车管理</h2>
   <ul style="display:block">
     <li><a href="CarServlet?method=listAll" target="right"><span class="icon-caret-right"></span>二手车列表</a></li>
-    <li><a href="carAdd.jsp" target="right"><span class="icon-caret-right"></span>添加二手车</a></li>
-    <li><a href="CarServlet?method=update" target="right"><span class="icon-caret-right"></span>修改二手车</a></li>  
+    <li><a href="carAdd.jsp" target="right"><span class="icon-caret-right"></span>添加二手车</a></li> 
   </ul>   
   
   <h2><span class="icon-user"></span>用户管理</h2>
   <ul>
     <li><a href="UserServlet?method=listAll" target="right"><span class="icon-caret-right"></span>用户列表</a></li>
     <li><a href="UserServlet?method=add" target="right"><span class="icon-caret-right"></span>添加用户</a></li>
-    <li><a href="UserServlet?method=update" target="right"><span class="icon-caret-right"></span>修改用户</a></li>  
   </ul>  
   
    <h2><span class="icon-pencil-square-o"></span>新闻管理</h2>
   <ul>
     <li><a href="NewsServlet?method=listAll" target="right"><span class="icon-caret-right"></span>新闻列表</a></li>
     <li><a href="NewsServlet?method=add" target="right"><span class="icon-caret-right"></span>添加新闻</a></li>
-    <li><a href="NewsServlet?method=update" target="right"><span class="icon-caret-right"></span>修改新闻</a></li>    
   </ul>  
 </div>
 <script type="text/javascript">
